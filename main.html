@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
 
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-  <form>
-      <lable for="name">Name</lable>
-	  <input type="text" id="text" name="text" minlength="3" maxlength="50" required><br><br>
-	  <lable for="porfolio">Portfolio</lable>
-	  <input type="url" id="url" name="url" required><br><br>
-	  <lable for="favcolor">Favorite Color</lable>
-	  <input type="color" id="favcolor" name="favcolor" required><br><br>
-	  <lable for="likeness">Likeness</lable>
-	  <input type="range" id="likeness" name="likeness" min="1" max="100" required><br><br>
-	  <button type="post">POST</button>
-	  
-  </form>
-	<script type="text/javascript" src="./script.js">
-</script>
+
+<h1>Feedback Form</h1>
+
+<form action="#" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
+
+  <label for="portfolio">Portfolio:</label>
+  <input type="url" id="portfolio" name="portfolio" required>
+
+  <label for="favColor">Favorite Color:</label>
+  <input type="color" id="favColor" name="favColor" required>
+
+  <label for="likeness">Likeness:</label>
+  <input type="range" id="likeness" name="likeness" min="1" max="100" required>
+
+  <button type="submit">Submit</button>
+</form>
 
 </body>
-
 </html>
